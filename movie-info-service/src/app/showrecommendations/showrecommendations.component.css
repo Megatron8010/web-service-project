@@ -1,0 +1,10 @@
+.exp-panel{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+}
+.center {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+  }

@@ -1,0 +1,16 @@
+.exp-panel{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+}
+.panel-desc{
+    flex: 1 1 auto;
+}
+#wrapper {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }

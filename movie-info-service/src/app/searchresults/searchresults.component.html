@@ -1,0 +1,44 @@
+<div id="wrapper">
+<button class="btn btn-info btn-lg" (click)="recommend()">Get Recommendations</button>
+</div>
+
+<!-- <div>
+<ul style="list-style: none;">  
+    <li *ngFor="let datum of filteredData; let i = index">
+        <button mat-mini-fab (click)="onLike(datum);onToggle(i)" [style.background-color]="clicked[i] ? 'green' : 'red'">
+            <mat-icon svgIcon="check" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+        <button mat-mini-fab (click)="onDisLike(datum);onToggle2(i)" [style.background-color]="clicked2[i] ? 'red' : 'green'">
+            <mat-icon svgIcon="not-interested" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+      {{ datum.paper_title }}
+    </li>   
+  </ul>
+</div> -->
+  <!-- <button (click)="recommend()" [routerLink]="'/recommend-component'">Recommend</button> -->
+  <mat-expansion-panel *ngFor="let datum of filteredData; let i = index" class="exp-panel">
+    
+    <mat-expansion-panel-header>
+        
+      <mat-panel-title>
+        {{ datum.paper_title }}
+      </mat-panel-title>
+      <mat-panel-description class="panel-desc">
+        Click to know the abstract
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+    <p>{{datum.abstract}}</p>
+  
+    <mat-action-row>
+        <button mat-mini-fab (click)="onLike(datum);onToggle(i)" [style.background-color]="clicked[i] ? 'aquamarine' : 'green'">
+            <mat-icon svgIcon="check" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+        <button mat-mini-fab (click)="onDisLike(datum);onToggle2(i)" [style.background-color]="clicked2[i] ? 'tomato' : 'red'">
+            <mat-icon svgIcon="not-interested" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+        <button mat-mini-fab (click)="openSearchResults(datum.paper_title)">
+            <mat-icon svgIcon="search" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+    </mat-action-row>
+  </mat-expansion-panel>

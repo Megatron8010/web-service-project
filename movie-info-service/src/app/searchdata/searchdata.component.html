@@ -1,0 +1,44 @@
+<!-- <input type="text" [(ngModel)]="filterText" (keyup)="onChange()">
+<button (click)=recommend()>Recommend!</button> -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <section class="mat-typography">
+  <div class="center">
+  <h2 class="mat-display-1">Welcome, Find Papers to Love </h2>
+</div>
+</section>
+
+<div class="row">
+  <div class="col-lg-4 col-centered">
+      <div class="input-group">
+     <input type="text" class="form-control" placeholder="" [(ngModel)]="filterText" (keyup)="onChange()" aria-label="" aria-describedby="basic-addon1">
+    
+    <div class="input-group-append">
+      <button class="btn btn-success" [routerLink]="'/result-component'" type="button">Search!</button>
+    </div>
+  </div>
+  </div>
+</div>
+  
+
+<!-- <ul>
+  <li *ngFor="let recommendation of recommendations">
+    {{ arrpapers[recommendation].paper_title }}
+  </li>
+
+</ul>
+<div *ngFor="let recommendation of recommendations" class="accordion" id="accordionExample" >
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          {{ arrpapers[recommendation].paper_title }}
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        {{ arrpapers[recommendation].abstract}}
+      </div>
+    </div>
+  </div> -->

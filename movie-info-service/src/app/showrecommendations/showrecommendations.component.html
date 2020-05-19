@@ -1,0 +1,23 @@
+<div class="center">
+    <h2>Here are your top 10 recommendations! </h2>
+  </div>
+<mat-expansion-panel *ngFor="let recommendation of recommendations_received; let i = index" class="exp-panel">
+    
+    <mat-expansion-panel-header>
+        
+      <mat-panel-title>
+        {{ arrpapers[recommendation].paper_title }}
+      </mat-panel-title>
+      <mat-panel-description>
+        Click to know more
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+    <p>{{ arrpapers[recommendation].abstract }}</p>
+  
+    <mat-action-row>
+        <button mat-mini-fab (click)="openSearchResults(arrpapers[recommendation].paper_title)">
+            <mat-icon svgIcon="search" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+        </button>
+    </mat-action-row>
+  </mat-expansion-panel>

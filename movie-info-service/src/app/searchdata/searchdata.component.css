@@ -1,0 +1,9 @@
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+.center {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+  }
