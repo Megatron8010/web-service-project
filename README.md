@@ -1,4 +1,4 @@
-# web-service-project
+# web-service-project Research Paper Recommendation
 
 Instructions to use
 
@@ -19,3 +19,5 @@ Instructions to use
   to start the container
 
 5) Access the web-app at http://localhost:8888
+
+6) Search for a term such as Machine learning, Deep Learning, Neural Networks to get relevant papers. Click on the paper to know more and choose if you think it's relevant or not and then click on show recommendations to get your recommendations.
